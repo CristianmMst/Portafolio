@@ -17,6 +17,7 @@ body {
   padding: 1rem;
   color: #000000;
   border-radius: 4px;
+  transition: background-color 1s;
 
   &:hover {
     background-color: red;

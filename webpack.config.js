@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.(js|jsx)$/,
+        test: /\.js|.jsx$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
         options: {
@@ -25,5 +25,8 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif$)/i,
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
   },
 };

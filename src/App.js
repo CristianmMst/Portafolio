@@ -1,9 +1,7 @@
+import Home from "./components/Home";
+
 const App = () => {
-  return (
-    <div className="container">
-      <h1>Hello World!</h1>
-    </div>
-  );
+  return <Home />;
 };
 
 export default App;
