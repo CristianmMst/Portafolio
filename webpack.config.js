@@ -8,16 +8,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "src/index.html" }),
-<<<<<<< HEAD
     new MiniCssExtractPlugin({ filename: "styles/main.css" }),
   ],
   performance: {
     hints: false,
   },
-=======
-    new MiniCssExtractPlugin({ filename: "css/main.css" }),
-  ],
->>>>>>> 0a11705d97ec97eb839438494dc928e2dc4402f4
   module: {
     rules: [
       {
