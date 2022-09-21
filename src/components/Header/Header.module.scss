@@ -1,0 +1,58 @@
+@import "../../sass/colors";
+
+header {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-primary;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      color: $tittle-color;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 5rem;
+      margin: 0;
+      letter-spacing: 0.05em;
+      line-height: 0.9em;
+    }
+
+    h2 {
+      color: $subtittle-color;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: arrowDown 1.5s alternate infinite;
+
+  a {
+    display: block;
+  }
+
+  @keyframes arrowDown {
+    from {
+      transform: translateY(-30px);
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
+}

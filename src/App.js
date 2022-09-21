@@ -1,7 +1,15 @@
-import Header from "./components/Header";
+import NavBar from "./components/NavBar/NavBar";
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
 
 const App = () => {
-  return <Header />;
+  return (
+    <>
+      <NavBar />
+      <Header />
+      <About />
+    </>
+  );
 };
 
 export default App;

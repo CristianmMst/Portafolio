@@ -28,20 +28,13 @@ module.exports = {
       },
       {
         test: /.(css|sass|scss)$/,
+        exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
+        type: "asset",
         test: /\.(png|svg|jpg|jpeg|gif$)/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "static/",
-              useRelativePath: true,
-            },
-          },
-        ],
+        exclude: /node_modules/,
       },
     ],
   },

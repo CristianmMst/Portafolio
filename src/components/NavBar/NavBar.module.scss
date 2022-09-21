@@ -1,0 +1,31 @@
+@import "../../sass/colors";
+
+nav {
+  top: 0;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  color: $tittle-color;
+  align-items: center;
+  justify-content: end;
+  background-color: $bg-primary;
+  z-index: 1000;
+
+  ul {
+    margin: 0;
+    padding: 17px;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    li {
+      a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: $tittle-color;
+      }
+    }
+  }
+}
