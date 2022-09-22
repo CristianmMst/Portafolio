@@ -1,22 +1,25 @@
 import styles from "./About.module.scss";
+import foto from "../../assets/Foto.jpg";
 
 const About = () => {
   return (
     <div id="about" className={styles.about}>
-      <h1>about</h1>
-      <p>
-        Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-        enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-        exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
-        nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
-        minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure
-        elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor
-        Lorem duis laboris cupidatat officia voluptate. Culpa proident
-        adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
-        Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-        Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
-        et culpa duis.
-      </p>
+      <div className={styles.tittle}>
+        <div>
+          <h1>Sobre mí</h1>
+          <div className={styles.subline}></div>
+        </div>
+      </div>
+      <div className={styles.paragraph}>
+        <img src={foto} alt="CristianMora" />
+        <p>
+          Mi campo de interés es la construcción de nuevas tecnologías y
+          productos web y también en áreas relacionadas con Deep Learning y
+          Natural Launguage Processing. Cuando es posible, también aplico mi
+          pasión por el desarrollo de productos con Node.js y Librerías y
+          Frameworks modernos de Javascript como React.js y Next.js
+        </p>
+      </div>
     </div>
   );
 };

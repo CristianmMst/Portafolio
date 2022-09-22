@@ -1,13 +1,58 @@
-.contenedor {
-  position: relative;
-  height: 38rem;
-  overflow: hidden;
-}
+@import "../../sass/colors";
 
 .about {
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  color: $tittle-color;
 }
 
+.tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    h1 {
+      margin: 0 0 0.2rem;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.subline {
+  background-color: $tittle-color;
+  border-radius: 2px;
+  width: 80%;
+  height: 0.2rem;
+  justify-self: center;
+  align-self: center;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 0 0 0;
+  width: 100%;
+
+  img {
+    border-radius: 50%;
+    width: 40%;
+    padding: 2rem;
+  }
+
+  p {
+    text-align: initial;
+    width: 50%;
+    font-size: 25px;
+  }
+}
