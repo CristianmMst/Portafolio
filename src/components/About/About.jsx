@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const About = () => {
   return (
     <div id="about" className={`${styles.about} about`}>
-      <Fade top delay={500}>
+      <Fade top duration={3000}>
         <div className={styles.tittle}>
           <div>
             <h1>Sobre mí</h1>
@@ -14,10 +14,10 @@ const About = () => {
         </div>
       </Fade>
       <div className={styles.paragraph}>
-        <Fade left delay={500}>
+        <Fade left duration={2000}>
           <img src={foto} alt="CristianMora" />
         </Fade>
-        <Fade right delay={500}>
+        <Fade right duration={2000}>
           <p>
             Mi campo de interés es la construcción de nuevas tecnologías y
             productos web y también en áreas relacionadas con Deep Learning y
