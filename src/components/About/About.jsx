@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const About = () => {
   return (
     <div id="about" className={`${styles.about} about`}>
-      <Fade top>
+      <Fade top delay={500}>
         <div className={styles.tittle}>
           <div>
             <h1>Sobre mí</h1>

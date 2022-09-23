@@ -40,6 +40,7 @@
 }
 .paragraph {
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: space-around;
   padding: 2rem 0 0 0;
