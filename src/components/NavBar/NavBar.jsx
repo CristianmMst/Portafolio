@@ -6,6 +6,9 @@ const NavBar = () => {
       <nav>
         <ul>
           <li className={styles.item}>
+            <a href="#">Inicio</a>
+          </li>
+          <li className={styles.item}>
             <a href="#about">sobre mí</a>
           </li>
           <li className={styles.item}>
