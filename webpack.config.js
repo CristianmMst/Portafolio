@@ -3,9 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
+    assetModuleFilename: "assets/images/[name][ext]",
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "src/index.html" }),
@@ -30,17 +31,28 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "assets/images/",
-            },
+        type: "asset",
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: "image-webpack-loader",
+        options: {
+          mozjpeg: {
+            progressive: true,
+            quality: 65,
           },
-        ],
+          optipng: {
+            enabled: true,
+          },
+          pngquant: {
+            quality: [0.65, 0.9],
+            speed: 4,
+          },
+          gifsicle: {
+            interlaced: false,
+          },
+          webp: {
+            quality: 75,
+          },
+        },
       },
     ],
   },
