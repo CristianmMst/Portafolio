@@ -1,7 +1,72 @@
-.about {
-  padding: 5rem;
-  border-bottom: 1px solid #dcd9d9;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@import "../../sass/colors";
+@import "../../sass/mixins";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-top: 5rem;
+}
+
+.tittle {
+  @include tittle;
+}
+
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30rem;
+  width: 90%;
+  border-radius: 1rem;
+
+  img {
+    width: 20rem;
+    border-radius: 1rem;
+  }
+}
+
+.cardItem {
+  width: 40%;
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.subline {
+  @include subline;
+}
+
+.btn {
+  box-shadow: inset 0 0 0 0 $subtittle-color;
+  padding: 0.5rem 1rem;
+  transition: box-shadow 1.5s ease;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+
+  &:hover {
+    color: white;
+    box-shadow: inset 200px 0 0 0 $subtittle-color;
+    background-color: transparent;
+  }
 }
