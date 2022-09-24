@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 
 const NavBar = ({
@@ -14,19 +13,19 @@ const NavBar = ({
       <nav>
         <ul>
           <li onClick={() => scrollToSection(home)} className={styles.item}>
-            <NavLink to={""}>Inicio</NavLink>
+            <a href="#home">Inicio</a>
           </li>
           <li onClick={() => scrollToSection(about)} className={styles.item}>
-            <NavLink to={""}>sobre mí</NavLink>
+            <a href="#about">sobre mí</a>
           </li>
           <li onClick={() => scrollToSection(projects)} className={styles.item}>
-            <NavLink to={""}>Proyectos</NavLink>
+            <a href="#projects">Proyectos</a>
           </li>
           <li onClick={() => scrollToSection(skills)} className={styles.item}>
-            <NavLink to={""}>Habilidades</NavLink>
+            <a href="#skilld">Habilidades</a>
           </li>
           <li onClick={() => scrollToSection(contact)} className={styles.item}>
-            <NavLink to={""}>Contacto</NavLink>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </nav>

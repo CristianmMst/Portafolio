@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const About = ({ about }) => {
   return (
-    <div ref={about} id="about" className={`${styles.about} about`}>
+    <section ref={about} className={`${styles.about} about`}>
       <Fade direction="up" duration={3000}>
         <div className={styles.tittle}>
           <div>
@@ -27,7 +27,7 @@ const About = ({ about }) => {
           </p>
         </Fade>
       </div>
-    </div>
+    </section>
   );
 };
 

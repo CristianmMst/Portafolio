@@ -24,7 +24,7 @@ const Skills = ({ skill }) => {
     { name: "npm", icon: faNpm },
   ];
   return (
-    <section ref={skill} id="skills" className={styles.skills}>
+    <section ref={skill} className={styles.skills}>
       <Fade direction="down" duration={2000}>
         <div className={styles.tittle}>
           <div>
