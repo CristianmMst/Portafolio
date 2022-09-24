@@ -2,7 +2,6 @@ import styles from "./Projects.module.scss";
 import appSalud from "../../assets/appSalud.svg";
 import dogsApp from "../../assets/dogsApp.png";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 
 const About = () => {
   return (
