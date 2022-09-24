@@ -1,0 +1,60 @@
+@import "../../sass/colors";
+@import "../../sass/mixins";
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+.skill {
+  width: 10rem;
+  color: blue;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.iconsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-top: 2rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  p {
+    color: grey;
+  }
+}
+
+.icon {
+  margin: 1rem;
+  font-size: 4.5rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $subtittle-color;
+  }
+}
+
+.tittle {
+  @include tittle;
+}
+
+.subline {
+  @include subline;
+}
