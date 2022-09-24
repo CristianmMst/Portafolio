@@ -1,12 +1,12 @@
 import styles from "./Projects.module.scss";
 import appSalud from "../../assets/appSalud.svg";
 import dogsApp from "../../assets/dogsApp.png";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
     <div id="projects" className={styles.projects}>
-      <Fade bottom duration={2000}>
+      <Fade direction="up" duration={2000}>
         <div className={styles.tittle}>
           <div>
             <h1>Proyectos</h1>
@@ -17,7 +17,7 @@ const About = () => {
       <div className={styles.containerCard}>
         <div className={styles.card}>
           <div className={styles.cardItem}>
-            <Fade left duration={2000}>
+            <Fade direction="left" duration={2000}>
               <h1>Más Salud</h1>
               <p>
                 App para la gestión de Historias Clinica que incluya además de
@@ -47,13 +47,13 @@ const About = () => {
               </a>
             </div>
           </div>
-          <Fade right duration={2000}>
+          <Fade direction="right" duration={2000}>
             <img src={appSalud} alt="appSalud" />
           </Fade>
         </div>
         <div className={styles.card}>
           <div className={styles.cardItem}>
-            <Fade left duration={2000}>
+            <Fade direction="left" duration={2000}>
               <h1>Dogs-App</h1>
               <p>
                 Diseñar y desarrollar una App de perros que incluía: búsquedas,
@@ -77,7 +77,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          <Fade right duration={2000}>
+          <Fade direction="right" duration={2000}>
             <img src={dogsApp} alt="dogsApp" />
           </Fade>
         </div>

@@ -1,5 +1,5 @@
 import styles from "./Skills.module.scss";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJs,
@@ -25,7 +25,7 @@ const Skills = () => {
   ];
   return (
     <section id="skills" className={styles.skills}>
-      <Fade bottom duration={2000}>
+      <Fade direction="down" duration={2000}>
         <div className={styles.tittle}>
           <div>
             <h1>Mis Habilidades</h1>
@@ -38,8 +38,7 @@ const Skills = () => {
           const num = index + 1;
           return (
             <Fade
-              bottom={num % 2 === 1}
-              left={num % 2 === 0}
+              direction={num % 2 === 1 ? "up" : "left"}
               duration={2000 + index * 100}
               delay={500 + index * 100}
               key={index}
