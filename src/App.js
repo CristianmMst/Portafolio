@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
 import { useRef } from "react";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
       <About about={about} scrollToSection={scrollToSection} />
       <Projects projects={projects} scrollToSection={scrollToSection} />
       <Skills skill={skill} scrollToSection={scrollToSection} />
+      <Contact contact={contact} scrollToSection={scrollToSection} />
     </>
   );
 };
