@@ -3,9 +3,9 @@ import appSalud from "../../assets/appSalud.svg";
 import dogsApp from "../../assets/dogsApp.png";
 import { Fade } from "react-awesome-reveal";
 
-const About = () => {
+const Projects = ({ projects }) => {
   return (
-    <div id="projects" className={styles.projects}>
+    <div ref={projects} id="projects" className={styles.projects}>
       <Fade direction="up" duration={2000}>
         <div className={styles.tittle}>
           <div>
@@ -86,4 +86,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projects;

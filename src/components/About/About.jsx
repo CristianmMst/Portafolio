@@ -2,9 +2,9 @@ import styles from "./About.module.scss";
 import foto from "../../assets/Foto.jpg";
 import { Fade } from "react-awesome-reveal";
 
-const About = () => {
+const About = ({ about }) => {
   return (
-    <div id="about" className={`${styles.about} about`}>
+    <div ref={about} id="about" className={`${styles.about} about`}>
       <Fade direction="up" duration={3000}>
         <div className={styles.tittle}>
           <div>

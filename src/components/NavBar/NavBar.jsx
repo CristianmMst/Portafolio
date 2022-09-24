@@ -1,24 +1,32 @@
 import styles from "./NavBar.module.scss";
+import { useRef } from "react";
 
-const NavBar = () => {
+const NavBar = ({
+  home,
+  about,
+  projects,
+  skills,
+  contact,
+  scrollToSection,
+}) => {
   return (
     <>
       <nav>
         <ul>
-          <li className={styles.item}>
-            <a href="#">Inicio</a>
+          <li onClick={() => scrollToSection(home)} className={styles.item}>
+            Inicio
           </li>
-          <li className={styles.item}>
-            <a href="#about">sobre mí</a>
+          <li onClick={() => scrollToSection(about)} className={styles.item}>
+            sobre mí
           </li>
-          <li className={styles.item}>
-            <a href="#projects">Proyectos</a>
+          <li onClick={() => scrollToSection(projects)} className={styles.item}>
+            Proyectos
           </li>
-          <li className={styles.item}>
-            <a href="#skills">Habilidades</a>
+          <li onClick={() => scrollToSection(skills)} className={styles.item}>
+            Habilidades
           </li>
-          <li className={styles.item}>
-            <a href="#contact">Contacto</a>
+          <li onClick={() => scrollToSection(contact)} className={styles.item}>
+            Contacto
           </li>
         </ul>
       </nav>

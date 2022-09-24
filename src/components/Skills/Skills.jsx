@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
-const Skills = () => {
+const Skills = ({ skill }) => {
   const skills = [
     { name: "hmtl", icon: faHtml5 },
     { name: "Css", icon: faCss3 },
@@ -24,7 +24,7 @@ const Skills = () => {
     { name: "npm", icon: faNpm },
   ];
   return (
-    <section id="skills" className={styles.skills}>
+    <section ref={skill} id="skills" className={styles.skills}>
       <Fade direction="down" duration={2000}>
         <div className={styles.tittle}>
           <div>

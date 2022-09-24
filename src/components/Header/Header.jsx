@@ -1,9 +1,9 @@
 import styles from "./Header.module.scss";
 import arrowDown from "../../assets/arrowDown.svg";
 
-const Header = () => {
+const Header = ({ home }) => {
   return (
-    <header>
+    <header ref={home} id="home">
       <div>
         <h1>Mora Cristian</h1>
         <h2>Full-Stack developer</h2>
