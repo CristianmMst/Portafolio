@@ -1,13 +1,15 @@
 @import "../../sass/colors";
+@import "../../sass/mixins";
 
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding-top: 5rem;
   color: $tittle-color;
   overflow: hidden;
+  height: 100vh;
 }
 
 .tittle {
@@ -31,25 +33,20 @@
 }
 
 .subline {
-  background-color: $tittle-color;
-  border-radius: 2px;
-  width: 80%;
-  height: 0.2rem;
-  justify-self: center;
-  align-self: center;
+  @include subline;
 }
+
 .paragraph {
   display: flex;
   overflow: hidden;
   align-items: center;
   justify-content: space-around;
-  padding: 2rem 0 0 0;
   width: 100%;
 
   img {
     border-radius: 50%;
     width: 40%;
-    padding: 2rem;
+    padding: 5rem;
   }
 
   p {
