@@ -6,10 +6,6 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: $bg-primary;
   margin: 0;
@@ -23,13 +19,6 @@ body {
     background-color: $tittle-color;
     border-radius: 5px;
   }
-}
-
-.hola {
-  color: blue !important;
-}
-.active {
-  color: red !important;
 }
 
 #root {

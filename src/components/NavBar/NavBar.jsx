@@ -1,45 +1,68 @@
-import styles from "./NavBar.module.scss";
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import "./NavBar.scss";
+import { Link } from "react-scroll";
 
-const NavBar = ({
-  home,
-  about,
-  projects,
-  skills,
-  contact,
-  scrollToSection,
-}) => {
+const NavBar = () => {
   return (
-    <>
-      <nav>
-        <ul>
-          <li className={styles.item}>
-            <Link to="home">Inicio</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="about">Sobre mí</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="projects">Proyectos</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="skills">Habilidades</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="contact">Contacto</Link>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav className="navbar">
+      <ul>
+        <li className="item">
+          <Link
+            className="link"
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            Inicio
+          </Link>
+        </li>
+        <li className="item">
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            Sobre mí
+          </Link>
+        </li>
+        <li className="item">
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            Proyectos
+          </Link>
+        </li>
+        <li className="item">
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            Habilidades
+          </Link>
+        </li>
+        <li className="item">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            Contacto
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
