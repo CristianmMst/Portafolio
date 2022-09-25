@@ -1,6 +1,7 @@
 import styles from "./Header.module.scss";
 import arrowDown from "../../assets/arrowDown.svg";
 import { Element } from "react-scroll/modules";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -10,9 +11,9 @@ const Header = () => {
         <h2>Full-Stack developer</h2>
       </div>
       <button className={styles.btn} type="button">
-        <a href="#about">
+        <Link spy={true} smooth={true} duration={1000} to="about">
           <img src={arrowDown} alt="arrowDown" />
-        </a>
+        </Link>
       </button>
     </Element>
   );
