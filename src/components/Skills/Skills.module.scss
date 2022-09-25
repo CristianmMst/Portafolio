@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: white;
   padding-top: 5rem;
   overflow: hidden;
+  height: 100vh;
 }
 
 .skill {
@@ -26,7 +27,6 @@
   justify-content: center;
   align-items: center;
   width: 30%;
-  margin-top: 2rem;
 }
 
 .icons {
