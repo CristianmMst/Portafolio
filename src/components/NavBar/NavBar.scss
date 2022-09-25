@@ -29,6 +29,7 @@
     text-decoration: none;
     color: $tittle-color;
     transition: all 0.25s ease-in-out;
+    cursor: pointer;
 
     &:after {
       content: "";
