@@ -1,6 +1,6 @@
 @import "../../sass/colors";
 
-nav {
+.navbar {
   top: 0;
   width: 100%;
   display: flex;
@@ -22,6 +22,7 @@ nav {
 }
 
 .item {
+  position: relative;
   a {
     display: block;
     padding: 10px;
@@ -36,11 +37,32 @@ nav {
       background-color: $subtittle-color;
       height: 5px;
       width: 0;
-      border-radius: .4rem;
+      border-radius: 0.4rem;
       transition: all 0.5s ease-out;
     }
     &:hover:after {
       width: 100%;
     }
+  }
+}
+
+.active {
+  &::before {
+    content: "";
+    left: 45%;
+    bottom: 8px;
+    width: 8px;
+    display: block;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $subtittle-color;
+    transition: all .5s ease;
+  }
+
+  &:hover::before {
+    transform: translateX(20px);
+    bottom: 10px;
+    height: 5px;
   }
 }
