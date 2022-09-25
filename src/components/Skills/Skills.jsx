@@ -26,7 +26,7 @@ const Skills = () => {
   ];
   return (
     <Element name="skills" className={styles.skills}>
-      <Fade direction="down" duration={2000}>
+      <Fade direction="up" duration={2000}>
         <div className={styles.tittle}>
           <div>
             <h1>Mis Habilidades</h1>
