@@ -4,35 +4,16 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
-import { useRef } from "react";
 
 const App = () => {
-  const home = useRef(null);
-  const about = useRef(null);
-  const projects = useRef(null);
-  const skill = useRef(null);
-  const contact = useRef(null);
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
   return (
     <>
-      <NavBar
-        home={home}
-        about={about}
-        projects={projects}
-        skills={skill}
-        contact={contact}
-        scrollToSection={scrollToSection}
-      />
-      <Header home={home} scrollToSection={scrollToSection} />
-      <About about={about} scrollToSection={scrollToSection} />
-      <Projects projects={projects} scrollToSection={scrollToSection} />
-      <Skills skill={skill} scrollToSection={scrollToSection} />
-      <Contact contact={contact} scrollToSection={scrollToSection} />
+      <NavBar />
+      <Header />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </>
   );
 };

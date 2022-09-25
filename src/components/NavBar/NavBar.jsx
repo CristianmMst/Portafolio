@@ -1,4 +1,14 @@
 import styles from "./NavBar.module.scss";
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 const NavBar = ({
   home,
@@ -12,20 +22,20 @@ const NavBar = ({
     <>
       <nav>
         <ul>
-          <li onClick={() => scrollToSection(home)} className={styles.item}>
-            <a href="#home">Inicio</a>
+          <li className={styles.item}>
+            <Link to="home">Inicio</Link>
           </li>
-          <li onClick={() => scrollToSection(about)} className={styles.item}>
-            <a href="#about">sobre mí</a>
+          <li className={styles.item}>
+            <Link to="about">Sobre mí</Link>
           </li>
-          <li onClick={() => scrollToSection(projects)} className={styles.item}>
-            <a href="#projects">Proyectos</a>
+          <li className={styles.item}>
+            <Link to="projects">Proyectos</Link>
           </li>
-          <li onClick={() => scrollToSection(skills)} className={styles.item}>
-            <a href="#skilld">Habilidades</a>
+          <li className={styles.item}>
+            <Link to="skills">Habilidades</Link>
           </li>
-          <li onClick={() => scrollToSection(contact)} className={styles.item}>
-            <a href="#contact">Contacto</a>
+          <li className={styles.item}>
+            <Link to="contact">Contacto</Link>
           </li>
         </ul>
       </nav>

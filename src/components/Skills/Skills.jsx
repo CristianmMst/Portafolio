@@ -1,6 +1,7 @@
 import styles from "./Skills.module.scss";
 import { Fade } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Element } from "react-scroll";
 import {
   faJs,
   faReact,
@@ -12,7 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
-const Skills = ({ skill }) => {
+const Skills = () => {
   const skills = [
     { name: "hmtl", icon: faHtml5 },
     { name: "Css", icon: faCss3 },
@@ -24,7 +25,7 @@ const Skills = ({ skill }) => {
     { name: "npm", icon: faNpm },
   ];
   return (
-    <section ref={skill} className={styles.skills}>
+    <Element name="skills" className={styles.skills}>
       <Fade direction="down" duration={2000}>
         <div className={styles.tittle}>
           <div>
@@ -51,7 +52,7 @@ const Skills = ({ skill }) => {
           );
         })}
       </div>
-    </section>
+    </Element>
   );
 };
 

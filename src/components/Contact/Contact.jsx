@@ -1,5 +1,7 @@
+import { Element } from "react-scroll";
+
 const Contact = ({ contact }) => {
-  return <section ref={contact}>Contact</section>;
+  return <Element name="contact">Contact</Element>;
 };
 
 export default Contact;

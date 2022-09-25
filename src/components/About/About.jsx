@@ -1,10 +1,11 @@
 import styles from "./About.module.scss";
 import foto from "../../assets/Foto.jpg";
 import { Fade } from "react-awesome-reveal";
+import { Element } from "react-scroll";
 
-const About = ({ about }) => {
+const About = () => {
   return (
-    <section ref={about} className={`${styles.about} about`}>
+    <Element name="about" className={styles.about}>
       <Fade direction="up" duration={3000}>
         <div className={styles.tittle}>
           <div>
@@ -27,7 +28,7 @@ const About = ({ about }) => {
           </p>
         </Fade>
       </div>
-    </section>
+    </Element>
   );
 };
 

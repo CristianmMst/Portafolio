@@ -2,10 +2,11 @@ import styles from "./Projects.module.scss";
 import appSalud from "../../assets/appSalud.svg";
 import dogsApp from "../../assets/dogsApp.png";
 import { Fade } from "react-awesome-reveal";
+import { Element } from "react-scroll";
 
-const Projects = ({ projects }) => {
+const Projects = () => {
   return (
-    <section ref={projects} className={styles.projects}>
+    <Element name="projects" className={styles.projects}>
       <Fade direction="up" duration={2000}>
         <div className={styles.tittle}>
           <div>
@@ -82,7 +83,7 @@ const Projects = ({ projects }) => {
           </Fade>
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 
