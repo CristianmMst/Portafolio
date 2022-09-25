@@ -13,23 +13,7 @@
 }
 
 .tittle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-
-    h1 {
-      margin: 0 0 0.2rem;
-      display: inline-block;
-      text-align: center;
-      text-transform: uppercase;
-    }
-  }
+  @include tittle;
 }
 
 .subline {
