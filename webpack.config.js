@@ -6,7 +6,7 @@ const DovEnv = require("dotenv-webpack");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "public"),
     assetModuleFilename: "assets/images/[name][ext]",
   },
   plugins: [
