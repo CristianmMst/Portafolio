@@ -1,29 +1,27 @@
 import { Element } from "react-scroll";
 import { Fade } from "react-awesome-reveal";
-import { useState } from "react";
+import { useRef } from "react";
+import emailJs from "@emailjs/browser";
 import "./Contact.scss";
 
 const Contact = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    text: "",
-  });
-
-  const handleChange = (event) => {
-    setForm({
-      ...form,
-      [event.target.name]: event.target.value,
-    });
-  };
-
+  const name = useRef();
+  const text = useRef();
+  const email = useRef();
   const handleSubmit = (event) => {
     event.preventDefault();
-    setForm({
-      name: "",
-      email: "",
-      text: "",
-    });
+    emailJs
+      .sendForm(
+        "service_yg3rrup",
+        "template_e5wu4pm",
+        event.target,
+        "ne0Tt5mezDB9d2EEa"
+      )
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+    name.current.value = "";
+    email.current.value = "";
+    text.current.value = "";
   };
 
   return (
@@ -39,28 +37,25 @@ const Contact = () => {
       <div className="formContainer">
         <form onSubmit={(event) => handleSubmit(event)}>
           <input
+            ref={name}
             type="text"
             name="name"
             placeholder="Nombre"
-            value={form.name}
-            onChange={(event) => handleChange(event)}
             required
           />
           <input
+            ref={email}
             type="email"
             name="email"
             placeholder="Correo Electronico"
-            value={form.email}
-            onChange={(event) => handleChange(event)}
             required
           />
           <textarea
+            ref={text}
             rows="10"
             cols="40"
             name="text"
             placeholder="Tu mensaje"
-            onChange={(event) => handleChange(event)}
-            value={form.text}
             required
           ></textarea>
           <button type="submit">Enviar</button>
