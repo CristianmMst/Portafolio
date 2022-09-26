@@ -49,8 +49,18 @@
 
 @media screen and (max-width: 500px) {
   .about {
-    padding-top: 3rem;
+    padding-top: 0;
+    justify-content: space-evenly;
   }
+
+  .tittle {
+    div {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+
   .paragraph {
     div {
       display: flex;
