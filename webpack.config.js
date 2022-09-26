@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const DovEnv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.js",
@@ -9,6 +10,7 @@ module.exports = {
     assetModuleFilename: "assets/images/[name][ext]",
   },
   plugins: [
+    new DovEnv(),
     new HtmlWebpackPlugin({ template: "src/index.html" }),
     new MiniCssExtractPlugin({ filename: "styles/main.css" }),
   ],

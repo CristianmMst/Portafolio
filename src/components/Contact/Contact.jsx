@@ -7,21 +7,22 @@ import emailJs from "@emailjs/browser";
 import "./Contact.scss";
 
 const Contact = () => {
+  const SERVICE_GMAIL = process.env.SERVICE_GMAIL;
+  const TEMPLATE_GMAIL = process.env.TEMPLATE_GMAIL;
+  const USER_ID_GMAIL = process.env.USER_ID_GMAIL;
+
   const name = useRef();
   const text = useRef();
   const email = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailJs
-      .sendForm(
-        "service_yg3rrup",
-        "template_e5wu4pm",
-        event.target,
-        "ne0Tt5mezDB9d2EEa"
-      )
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
+    emailJs.sendForm(
+      SERVICE_GMAIL,
+      TEMPLATE_GMAIL,
+      event.target,
+      USER_ID_GMAIL
+    );
     name.current.value = "";
     email.current.value = "";
     text.current.value = "";
