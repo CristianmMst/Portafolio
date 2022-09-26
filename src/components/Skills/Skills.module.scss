@@ -4,6 +4,7 @@
 .skills {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   align-items: center;
   justify-content: space-around;
   color: white;
