@@ -1,13 +1,34 @@
-import "./NavBar.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
+import { useState } from "react";
+import "./NavBar.scss";
 
 const NavBar = () => {
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    setActive(!active);
+  };
   return (
     <nav className="navbar">
-      <ul>
+      <div className="menu-mobile" onClick={handleClick}>
+        {active ? (
+          <FontAwesomeIcon
+            icon={faXmark}
+            style={{ fontSize: "35px", padding: "10px" }}
+          />
+        ) : (
+          <FontAwesomeIcon
+            icon={faBars}
+            style={{ fontSize: "30px", padding: "10px" }}
+          />
+        )}
+      </div>
+      <ul className={`nav ${active ? "menu-mobile_active" : ""}`}>
         <li className="item">
           <Link
             activeClass="active"
+            onClick={handleClick}
             to="home"
             spy={true}
             smooth={true}
@@ -19,6 +40,7 @@ const NavBar = () => {
         <li className="item">
           <Link
             activeClass="active"
+            onClick={handleClick}
             to="about"
             spy={true}
             smooth={true}
@@ -30,6 +52,7 @@ const NavBar = () => {
         <li className="item">
           <Link
             activeClass="active"
+            onClick={handleClick}
             to="projects"
             spy={true}
             smooth={true}
@@ -41,6 +64,7 @@ const NavBar = () => {
         <li className="item">
           <Link
             activeClass="active"
+            onClick={handleClick}
             to="skills"
             spy={true}
             smooth={true}
@@ -52,6 +76,7 @@ const NavBar = () => {
         <li className="item">
           <Link
             activeClass="active"
+            onClick={handleClick}
             to="contact"
             spy={true}
             smooth={true}

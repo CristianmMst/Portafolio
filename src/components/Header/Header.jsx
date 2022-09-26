@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <Element name="home" className={styles.home}>
       <div>
-        <h1>Mora Cristian</h1>
+        <h1>
+          Mora <br></br> Cristian
+        </h1>
         <h2>Full-Stack developer</h2>
       </div>
       <button className={styles.btn} type="button">
