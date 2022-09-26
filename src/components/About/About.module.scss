@@ -4,8 +4,8 @@
 .about {
   display: flex;
   overflow-x: hidden;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding-top: 5rem;
   color: $tittle-color;
@@ -23,6 +23,7 @@
 
 .paragraph {
   display: flex;
+  flex-direction: column;
   overflow: hidden;
   align-items: center;
   justify-content: space-around;
@@ -44,4 +45,23 @@
   border-radius: 50%;
   width: 90%;
   padding: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    padding-top: 3rem;
+  }
+  .paragraph {
+    div {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+    }
+  }
+  .paragraphAbout {
+    font-size: 18px;
+  }
+  .img {
+    padding: 2rem;
+  }
 }
