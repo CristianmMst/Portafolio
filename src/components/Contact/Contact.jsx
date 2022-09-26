@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Element } from "react-scroll";
 import { Fade } from "react-awesome-reveal";
 import { useRef } from "react";
@@ -8,6 +10,7 @@ const Contact = () => {
   const name = useRef();
   const text = useRef();
   const email = useRef();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     emailJs
@@ -60,6 +63,17 @@ const Contact = () => {
           ></textarea>
           <button type="submit">Enviar</button>
         </form>
+      </div>
+      <div className="redes">
+        <a href="https://github.com/CristianmMst" target="_blank">
+          <FontAwesomeIcon className="icon" icon={faGithub} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/cristian-mora-6342a4248/"
+          target="_blank"
+        >
+          <FontAwesomeIcon className="icon" icon={faLinkedin} />
+        </a>
       </div>
     </Element>
   );
