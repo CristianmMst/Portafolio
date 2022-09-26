@@ -61,11 +61,13 @@
 @media screen and (max-width: 500px) {
   .home {
     div {
-      left: 57%;
+      h1 {
+        font-size: 70px;
+      }
     }
   }
 
   .btn {
-    top: 100%;
+    left: 45%;
   }
 }
