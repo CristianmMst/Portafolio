@@ -71,6 +71,31 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .projects {
+    padding-top: 3rem;
+  }
+  .card {
+    justify-content: start;
+    height: 80vh;
+    margin-top: 0;
+
+    div {
+      width: 100%;
+      p {
+        font-size: 15px;
+      }
+    }
+    div:not(.cardItem) {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   .projects {
     padding-top: 3rem;
@@ -92,4 +117,4 @@
       }
     }
   }
-} ;
+}
