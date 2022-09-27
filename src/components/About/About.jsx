@@ -20,11 +20,11 @@ const About = () => {
         </Fade>
         <Fade direction="right" duration={2000}>
           <p className={styles.paragraphAbout}>
-            Mi campo de interés es la construcción de nuevas tecnologías y
-            productos web y también en áreas relacionadas con Deep Learning y
-            Natural Launguage Processing. Cuando es posible, también aplico mi
-            pasión por el desarrollo de productos con Node.js y Librerías y
-            Frameworks modernos de Javascript como React.js y Next.js.
+            Busco formar parte de una empresa que me permita aplicar todos mis
+            conocimientos, asi como mi capacidad de planificación, organización
+            y dirección del funcionamiento de una empresa en compañias afines.
+            que me brinde la oportunidad de crecer en el área laboral, personal
+            e intelectual.
           </p>
         </Fade>
       </div>
