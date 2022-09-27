@@ -17,12 +17,10 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailJs.sendForm(
-      SERVICE_GMAIL,
-      TEMPLATE_GMAIL,
-      event.target,
-      USER_ID_GMAIL
-    );
+    emailJs
+      .sendForm(SERVICE_GMAIL, TEMPLATE_GMAIL, event.target, USER_ID_GMAIL)
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
     name.current.value = "";
     email.current.value = "";
     text.current.value = "";
