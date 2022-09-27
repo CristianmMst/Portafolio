@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <Element name="contact" className="contact">
-      <Fade direction="up" duration={3000}>
+      <Fade direction="up" duration={2000}>
         <div className="tittle">
           <div>
             <h1>contactame</h1>
