@@ -60,6 +60,27 @@
   @include subline;
 }
 
+@media screen and (max-width: 750px) {
+  .skills {
+    padding-top: 0;
+    justify-content: space-evenly;
+  }
+  .tittle {
+    div {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+  .iconsContainer {
+    width: 60%;
+    height: 60%;
+  }
+  .icon {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .skills {
     padding-top: 0;
