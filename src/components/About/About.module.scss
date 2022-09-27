@@ -46,6 +46,38 @@
   padding: 5rem;
 }
 
+@media screen and (max-width: 750px) {
+  .about {
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .tittle {
+    div {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .paragraph {
+    margin-top: 4rem;
+    div {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+    }
+  }
+  .paragraphAbout {
+    font-size: 18px;
+  }
+  .img {
+    width: 70%;
+    padding: 0 0 0 0;
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .about {
     padding-top: 0;
