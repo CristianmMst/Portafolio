@@ -26,8 +26,8 @@ const Projects = () => {
                 paciente, User medico - User admin Integración pasarela (Mercado
                 Pago), auth0, notificaciones por email, administracion de
                 usuários, dashboard, Metodología SCRUM, Tecnologías: Lenguaje:
-                JavaScript, Base de datos: PostgreSQL - Sequelize- Backend: Node
-                Js - Express- Frontend: React - Redux. Estilos: CSS, Boostrap
+                JavaScript, PostgreSQL - Sequelize - Node Js - Express - React -
+                Redux. Estilos: CSS, Boostrap
               </p>
             </Fade>
             <div style={{ marginTop: "2rem" }}>

@@ -30,7 +30,6 @@
   justify-content: space-around;
   height: 30rem;
   width: 90%;
-  border-radius: 1rem;
 
   img {
     width: 20rem;
@@ -71,3 +70,26 @@
     background-color: transparent;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .projects {
+    padding-top: 4rem;
+  }
+  .card {
+    flex-direction: column-reverse;
+    justify-content: start;
+    height: 80vh;
+    margin-top: 4rem;
+
+    div {
+      width: 100%;
+    }
+    div:not(.cardItem) {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 60%;
+      }
+    }
+  }
+} ;
