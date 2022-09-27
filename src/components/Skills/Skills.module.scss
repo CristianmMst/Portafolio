@@ -59,3 +59,13 @@
 .subline {
   @include subline;
 }
+
+@media screen and (max-width: 500px) {
+  .iconsContainer {
+    width: 90%;
+    height: 70%;
+  }
+  .icon {
+    font-size: 4rem;
+  }
+} ;
