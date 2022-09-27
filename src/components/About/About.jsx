@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 const About = () => {
   return (
     <Element name="about" className={styles.about}>
-      <Fade direction="up" duration={3000}>
+      <Fade direction="up" duration={2000}>
         <div className={styles.tittle}>
           <div>
             <h1>Sobre mí</h1>
