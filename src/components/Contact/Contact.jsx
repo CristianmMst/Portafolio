@@ -13,15 +13,12 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailJs
-      .sendForm(
-        "service_yg3rrup",
-        "template_e5wu4pm",
-        event.target,
-        "ne0Tt5mezDB9d2EEa"
-      )
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
+    emailJs.sendForm(
+      "service_yg3rrup",
+      "template_e5wu4pm",
+      event.target,
+      "ne0Tt5mezDB9d2EEa"
+    );
     name.current.value = "";
     email.current.value = "";
     text.current.value = "";
