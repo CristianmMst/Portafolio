@@ -73,7 +73,11 @@ const Projects = () => {
               >
                 ver pagina
               </a>
-              <a href="#" target="_blank" className={styles.btn}>
+              <a
+                href="https://github.com/CristianmMst/PI-Dogs"
+                target="_blank"
+                className={styles.btn}
+              >
                 ver Codigo
               </a>
             </div>
