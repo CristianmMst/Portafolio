@@ -61,9 +61,20 @@
 }
 
 @media screen and (max-width: 500px) {
+  .skills {
+    padding-top: 0;
+    justify-content: space-evenly;
+  }
+  .tittle {
+    div {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
   .iconsContainer {
     width: 90%;
-    height: 70%;
+    height: 60%;
   }
   .icon {
     font-size: 4rem;
