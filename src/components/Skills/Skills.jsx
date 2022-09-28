@@ -1,28 +1,22 @@
 import styles from "./Skills.module.scss";
+import { AiFillHtml5 } from "react-icons/ai";
+import { FaSass, FaReact, FaNodeJs } from "react-icons/fa";
+import { DiCss3Full, DiNpm } from "react-icons/di";
+import { SiJavascript, SiRedux, SiPostgresql } from "react-icons/si";
 import { Fade } from "react-awesome-reveal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Element } from "react-scroll";
-import {
-  faJs,
-  faReact,
-  faSass,
-  faNodeJs,
-  faHtml5,
-  faCss3,
-  faNpm,
-} from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
   const skills = [
-    { name: "hmtl", icon: faHtml5 },
-    { name: "Css", icon: faCss3 },
-    { name: "JavaScript", icon: faJs },
-    { name: "sass", icon: faSass },
-    { name: "react", icon: faReact },
-    { name: "nodeJS", icon: faNodeJs },
-    { name: "SQL", icon: faDatabase },
-    { name: "npm", icon: faNpm },
+    { name: "hmtl", icon: <AiFillHtml5 className={styles.icon} /> },
+    { name: "Css", icon: <DiCss3Full className={styles.icon} /> },
+    { name: "JavaScript", icon: <SiJavascript className={styles.icon} /> },
+    { name: "sass", icon: <FaSass className={styles.icon} /> },
+    { name: "react", icon: <FaReact className={styles.icon} /> },
+    { name: "Redux", icon: <SiRedux className={styles.icon} /> },
+    { name: "nodeJS", icon: <FaNodeJs className={styles.icon} /> },
+    { name: "SQL", icon: <SiPostgresql className={styles.icon} /> },
+    { name: "npm", icon: <DiNpm className={styles.icon} /> },
   ];
   return (
     <Element name="skills" className={styles.skills}>
@@ -45,7 +39,7 @@ const Skills = () => {
               key={index}
             >
               <div key={index} className={styles.icons}>
-                <FontAwesomeIcon className={styles.icon} icon={i.icon} />
+                {i.icon}
                 <p>{i.name}</p>
               </div>
             </Fade>

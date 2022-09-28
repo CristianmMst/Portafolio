@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { useState } from "react";
 import "./NavBar.scss";
@@ -13,15 +12,9 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="menu-mobile" onClick={handleClick}>
         {active ? (
-          <FontAwesomeIcon
-            icon={faXmark}
-            style={{ fontSize: "35px", padding: "10px" }}
-          />
+          <FaTimes style={{ fontSize: "45px", padding: "10px" }} />
         ) : (
-          <FontAwesomeIcon
-            icon={faBars}
-            style={{ fontSize: "30px", padding: "10px" }}
-          />
+          <FaBars style={{ fontSize: "45px", padding: "10px" }} />
         )}
       </div>
       <ul className={`nav ${active ? "menu-mobile_active" : ""}`}>

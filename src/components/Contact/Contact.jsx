@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Element } from "react-scroll";
 import { Fade } from "react-awesome-reveal";
 import { useRef } from "react";
@@ -63,13 +62,13 @@ const Contact = () => {
       </div>
       <div className="redes">
         <a href="https://github.com/CristianmMst" target="_blank">
-          <FontAwesomeIcon className="icon" icon={faGithub} />
+          <FaGithub className="icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/cristian-mora-6342a4248/"
           target="_blank"
         >
-          <FontAwesomeIcon className="icon" icon={faLinkedin} />
+          <FaLinkedin className="icon" />
         </a>
       </div>
     </Element>
