@@ -20,11 +20,8 @@ const About = () => {
         </Fade>
         <Fade direction="right" duration={2000}>
           <p className={styles.paragraphAbout}>
-            Busco formar parte de una empresa que me permita aplicar todos mis
-            conocimientos, asi como mi capacidad de planificación, organización
-            y dirección del funcionamiento de una empresa en compañias afines.
-            que me brinde la oportunidad de crecer en el área laboral, personal
-            e intelectual.
+            Hola soy Cristian, desarrollador web full-stack autonomo. Con
+            experiencia diseño y desarrollo de aplicaciones web.
           </p>
         </Fade>
       </div>
