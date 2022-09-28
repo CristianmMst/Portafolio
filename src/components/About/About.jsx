@@ -20,8 +20,8 @@ const About = () => {
         </Fade>
         <Fade direction="right" duration={2000}>
           <p className={styles.paragraphAbout}>
-            Hola soy Cristian, desarrollador web full-stack autonomo. Con
-            experiencia diseño y desarrollo de aplicaciones web.
+            Hola soy Cristian, desarrollador web Full-Stack autónomo. Con
+            experiencia en diseño y desarrollo de aplicaciones web.
           </p>
         </Fade>
       </div>
